@@ -58,6 +58,7 @@ a:hover {
 }
 .menu-control-container {
   display: none !important;
+
   position: absolute !important;
   right: 10px !important;
   top: 25px !important;

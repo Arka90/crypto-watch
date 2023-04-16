@@ -18,8 +18,6 @@ function Cryptocurrencies({ simplified }) {
     setCryptos(filterData);
   }, [cryptosList, searchTerm]);
 
-  console.log(cryptos);
-
   if (isFetching) return <Loader />;
 
   return (

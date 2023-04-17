@@ -9,6 +9,8 @@ import {
   PointElement,
   LinearScale,
   CategoryScale,
+  Legend,
+  Tooltip,
 } from "chart.js";
 
 import { Col, Row, Typography } from "antd";
@@ -19,7 +21,9 @@ Chart.register(
   LineElement,
   PointElement,
   LinearScale,
-  CategoryScale
+  CategoryScale,
+  Legend,
+  Tooltip
 );
 
 function LineChart({ coinHistory, currentPrice, coinName }) {
@@ -36,6 +40,7 @@ function LineChart({ coinHistory, currentPrice, coinName }) {
     coinTimeStamps.push(
       new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString()
     );
+    console.log(coinHistory?.data?.history[i].timestamp);
   }
 
   const data = {
@@ -47,7 +52,6 @@ function LineChart({ coinHistory, currentPrice, coinName }) {
         fill: true,
         backgroundColor: "#0071bd",
         borderColor: "#0071bd",
-        pointStyle: "triangle",
       },
     ],
   };
@@ -61,6 +65,9 @@ function LineChart({ coinHistory, currentPrice, coinName }) {
           },
         },
       ],
+    },
+    plugins: {
+      legend: true,
     },
   };
 

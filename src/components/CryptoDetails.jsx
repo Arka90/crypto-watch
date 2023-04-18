@@ -17,7 +17,7 @@ import {
 } from "@ant-design/icons";
 
 import LineChart from "./LineChart";
-import News from "./News";
+// import News from "./News";
 import Loader from "./Loader";
 import {
   useGetCryptoDetailsQuery,

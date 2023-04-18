@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: roboto; */
 }
 
 a:hover {
@@ -389,4 +390,8 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+}
+
+.ant-spin-dot-item {
+  background-color: #ffa500;
 }

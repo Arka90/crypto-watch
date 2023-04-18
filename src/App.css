@@ -2,7 +2,7 @@
   --text-primary: #000;
   --bgPrimary: #fff;
   --bgSecondary: #f9f9f9;
-  --pink: #0071bd;
+  --pink: #ffa500;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
 }
@@ -230,6 +230,9 @@ a:hover {
 
 .coin-desc {
   flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
 }
 
 .coin-links {
@@ -321,10 +324,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  color: #0071bd;
+  color: #ffa500;
 }
 .chart-title {
-  color: #0071bd !important;
+  color: #ffa500 !important;
 }
 .price-container {
   display: flex !important;
@@ -332,9 +335,20 @@ a:hover {
   align-items: center !important;
   flex-wrap: wrap !important;
 }
-.price-change {
+
+.red,
+.green {
   font-weight: 900 !important;
 }
+
+.red {
+  color: #dc143c !important;
+}
+
+.green {
+  color: #228b22 !important;
+}
+
 .current-price {
   margin-top: 0px !important;
   font-weight: 900 !important;

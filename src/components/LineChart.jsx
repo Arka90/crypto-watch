@@ -31,7 +31,7 @@ function LineChart({ coinHistory, currentPrice, coinName }) {
 
   const coinPrice = [];
   const coinTimeStamps = [];
-  console.log(coinHistory.data.history[0].timeStamp);
+
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
     coinPrice.push(coinHistory?.data?.history[i].price);
   }
@@ -44,10 +44,9 @@ function LineChart({ coinHistory, currentPrice, coinName }) {
     );
     // console.log(coinHistory?.data?.history[i].timestamp);
   }
-  console.log(coinTimeStamps);
 
   coinTimeStamps.sort();
-  console.log(coinTimeStamps);
+
   const data = {
     labels: coinTimeStamps,
     datasets: [
